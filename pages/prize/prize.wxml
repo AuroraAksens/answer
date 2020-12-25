@@ -1,0 +1,34 @@
+<!-- 个人奖品列表页 -->
+
+<view class="page">
+
+	<!-- 奖品列表 -->
+	<view class="page-box" wx:for="{{2}}" wx:key="index">
+		<view class="title">
+			<view style="font-size: 24rpx;">精美小礼品</view>
+			<view style="font-size: 20rpx;color: gray;">2020-09-01</view>
+		</view>
+		<view class="but" bindtap="showTips">去领取</view>
+	</view>
+	<!-- 奖品列表结束 -->
+
+
+	<!-- 弹框 -->
+	<view class="explainTips" bindtap="showTips" wx:if="{{showTips == true}}">
+		<view class="tipsBox bou-30">
+			<view class="body">
+				<view>精美小礼品</view>
+			</view>
+
+			<view class="bottom">
+        <view class="top">
+          <view>部门/杭州生产部</view>
+          <view>姓名/123</view>
+        </view>
+        <view class="bot">凭工卡到活动现场领取</view>
+      </view>
+		</view>
+	</view>
+	<!-- 弹框结束 -->
+
+</view>

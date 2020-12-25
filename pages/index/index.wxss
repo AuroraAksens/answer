@@ -1,0 +1,274 @@
+.page {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(180deg, #4D7A73 0%, #97C1AE 100%);
+  position: relative;
+  padding-top: 10vh;
+}
+
+/* 顶部按钮 */
+.but {
+  position: absolute;
+  right: 40rpx;
+  top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.but>.but-box {
+  width: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.but>.but-box>.top {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but>.but-box>.top>image {
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.but>.but-box>.bottom {
+  font-size: 20rpx;
+  color: #FFFFFF;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+
+
+
+/* 首页弹框 */
+.home {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.home>image {
+  width: 100%;
+  height: 930rpx;
+}
+
+.home>.box {
+  width: 100%;
+  position: absolute;
+  top: 260rpx;
+}
+
+.home>.box>.top {
+  width: 260rpx;
+  height: 80rpx;
+  border-radius: 60rpx;
+  background: linear-gradient(180deg, #F3B1B9 0%, #FF586C 100%);
+  text-align: center;
+  line-height: 50rpx;
+  color: white;
+  margin: auto;
+}
+
+.home>.box>.top1 {
+  width: 260rpx;
+  height: 80rpx;
+  border-radius: 60rpx;
+  background: linear-gradient(180deg, #F3B1B9 0%, #FF586C 100%);
+  text-align: center;
+  line-height: 80rpx;
+  color: white;
+  margin: auto;
+}
+
+.home>.box>.bottom {
+  width: 450rpx;
+  color: #FFFFFF;
+  margin: auto;
+  font-size: 22rpx;
+}
+
+.home>.box>.bottom>.ti {
+  text-align: center;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+}
+
+.home>.box>.bottom>.bo {
+  text-align: center;
+  line-height: 40rpx;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+/* 底部气泡二维码 */
+.bub {
+  width: 660rpx;
+  margin: auto;
+}
+
+.bub>.bub-box {
+  position: relative;
+}
+
+.bub>.bub-box>image {
+  width: 100%;
+  height: 210rpx;
+}
+
+.bub>.bub-box>.text {
+  width: 280rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  color: #59857C;
+  position: absolute;
+  top: 30rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-weight: bold;
+}
+
+.bub>.qrcode {
+  width: 145rpx;
+  height: 145rpx;
+  margin: -40rpx auto;
+}
+
+.bub>.qrcode>image {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* 弹框样式 */
+.explainTips {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(105, 105, 105, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.explainTips>.tipsBox {
+  width: 70%;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+.explainTips>.tipsBox>.tipsQrcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20%;
+
+}
+
+.explainTips>.tipsBox>.tipsQrcode>.tipsText {
+  font-size: 30rpx;
+  color: #57847B;
+  font-weight: bold;
+}
+
+.explainTips>.bigBut {
+  width: 70%;
+  height: 90rpx;
+  background: linear-gradient(180deg, #F88F56 0%, #EE7636 100%);
+  color: white;
+  line-height: 90rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  border-radius: 40rpx;
+}
+
+
+
+
+/* 填写信息弹框 */
+.explainTips>.tipsBox>.title2 {
+  width: 100%;
+  text-align: center;
+  line-height: 40rpx;
+  color: #7F8389;
+  margin-bottom: 40rpx;
+}
+
+.explainTips>.tipsBox>.body2>.body-box2 {
+  color: #4D7A73;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.explainTips>.tipsBox>.body2>.body-box2>view {
+  width: 170rpx;
+  text-align: right;
+  padding-right: 20rpx;
+}
+
+.explainTips>.tipsBox>.body2>.body-box2>input {
+  width: 300rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.explainTips>.tipsBox>.body2>.body-box2>.m-select {
+  width: 300rpx;
+  height: 60rpx;
+  border: 1rpx solid #4D7A73;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picker {
+  width: 315rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+
+
+
+
+.explainTips>.tipsBox>.but2 {
+  width: 380rpx;
+  height: 80rpx;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+  background: linear-gradient(180deg, #4D7A73 0%, #3B6560 100%);
+  border-radius: 40rpx;
+  margin: 40rpx auto;
+}
+
+.explainTips>.tipsBox>.but1 {
+  width: 380rpx;
+  height: 80rpx;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: gray;
+  border-radius: 40rpx;
+  margin: 40rpx auto;
+}

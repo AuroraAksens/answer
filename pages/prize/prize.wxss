@@ -1,0 +1,94 @@
+/* pages/prize/prize.wxss */
+.page {
+  background-color: #F2F5F4;
+  width: 100%;
+  height: 98vh;
+  position: relative;
+  padding-top: 2vh;
+}
+
+.page-box {
+  width: 85%;
+  height: 240rpx;
+  border-radius: 20rpx;
+  background-color: white;
+  margin: 20rpx auto;
+  padding-left: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.page-box>.but {
+  width: 180rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: white;
+  background: linear-gradient(180deg, #F88F56 0%, #EE7636 100%);
+  text-align: center;
+  font-size: 30rpx;
+  position: absolute;
+  top: 90rpx;
+  right: 0;
+  border-radius: 34px 0px 0px 34px;
+}
+
+
+
+
+/* 弹框样式 */
+.explainTips{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(105, 105, 105, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.explainTips>.tipsBox{
+  width: 70%;
+  background-color: white;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+.explainTips>.tipsBox>.head{
+  width: 100%;
+  height: 80rpx;
+  font-size: 32rpx;
+  color: #030303;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #d6d6d6;
+}
+
+.explainTips>.tipsBox>.body{
+  width: 80%;
+  font-size: 40rpx;
+  margin: 50rpx auto 40rpx auto;
+  color: #4D7A73;
+  line-height: 300rpx;
+  text-align: center;
+}
+
+.explainTips>.tipsBox>.bottom{
+  width: 100%;
+  background-color: #F4F6F9;
+}
+.explainTips>.tipsBox>.bottom>.top{
+  display: flex;
+  justify-content: space-around;
+  line-height: 120rpx;
+  color: #4D7A73;
+}
+.explainTips>.tipsBox>.bottom>.bot{
+  color: #2F6097;
+  text-align: center;
+  font-size: 24rpx;
+  padding-bottom: 10rpx;
+}

@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/prize/prize",
+    "pages/answer/answer",
+    "pages/answerEnd/answerEnd",
+    "pages/my/my",
+    "pages/lottery/lottery"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4D7A73",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

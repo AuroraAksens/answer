@@ -1,0 +1,138 @@
+.m-Turntable {
+  position: relative;
+}
+.foot_btn{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+page {
+  position: relative;
+  height: 100%;
+}
+
+view, scroll-view, swiper, button, input, textarea, label, navigator, image {
+  box-sizing: content-box;
+}
+
+.TurntableBj {
+  width: 100vw;
+  height: 100vh;
+}
+
+.lotteryBox {
+  position: absolute;
+  top: 408rpx;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.WinningBox {
+  position: absolute;
+  top: 1105rpx;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.WinningBox image {
+  position: relative;
+}
+
+.AwardsBox {
+  position: absolute;
+  top: 1476rpx;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.returnBtn {
+  position: absolute;
+  top: 2320rpx;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.returnBtn image {
+  width: 136rpx;
+  height: 60rpx;
+}
+
+/* ggl */
+
+.swiper_com {
+  width: 387rpx;
+  height: 120rpx;
+}
+
+.swiper_item {
+  font-size: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  margin-bottom: 10rpx;
+  color: rgb(164, 212, 224);
+  border-bottom: 1px dashed #dadada;
+  padding-bottom: 5px;
+}
+
+.scrollBox {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25rpx;
+}
+
+/* .AwardsImage {
+  width: 602rpx;
+  height: 764rpx;
+}
+
+.WinningImage {
+  width: 595rpx;
+  height: 358rpx;
+} */
+
+.prizeBox {
+  position: absolute;
+  top: 90px;
+  height: 550rpx;
+  overflow: hidden;
+}
+
+.prizeBoxImage {
+  width: 105rpx;
+  height: 130rpx;
+}
+
+.prizeBox1 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #dadada;
+  margin-bottom: 4rpx;
+}
+
+.prizeBox2 {
+  font-size: 22rpx;
+  margin-left: 30rpx;
+  margin-top: 42rpx;
+  color: #4c98ba;
+}
+
+.prizeText {
+  margin-bottom: 5rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.action {
+  width: 100%;
+  display: flex;
+}

@@ -1,0 +1,28 @@
+<!-- 个人信息页 -->
+
+<view class="page">
+
+	<!-- 个人信息列表 -->
+	<view class="my">
+		<view class="title">头像</view>
+		<view class="body">
+			<image src="/images/home.png"></image>
+		</view>
+	</view>
+
+  <view class="my1">
+		<view class="title">姓名</view>
+		<view class="body">
+			名字
+		</view>
+	</view>
+
+  <view class="my1">
+		<view class="title">部门</view>
+		<view class="body">
+			技术部
+		</view>
+	</view>
+	<!-- 个人信息列表结束 -->
+
+</view>

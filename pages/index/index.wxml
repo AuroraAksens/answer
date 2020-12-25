@@ -1,0 +1,117 @@
+<!-- 首页 -->
+
+<view class="page">
+
+	<!-- 顶部按钮 -->
+	<!-- <view class="but">
+
+		<view class="but-box" bindtap="goPrize">
+			<view class="top">
+				<image src="/images/icon/message.png"></image>
+			</view>
+			<view class="bottom">
+				奖品信息
+			</view>
+		</view>
+
+		<view class="but-box" bindtap="goMy">
+			<view class="top">
+				<image src="/images/icon/my.png"></image>
+			</view>
+			<view class="bottom">
+				个人信息
+			</view>
+		</view>
+
+	</view> -->
+	<!-- 顶部按钮结束 -->
+
+
+
+	<!-- 首页弹框 -->
+	<view class="home">
+		<image src="/images/home.png"></image>
+		<view class="box">
+			<button class="top" wx:if="{{chlogin1 == 1}}" bindgetuserinfo="getUserInfoFun" openType="getUserInfo">开始答题</button>
+			<view class="top1" wx:if="{{chlogin1 == 0}}" bindtap="goend">开始答题</view>
+			<!-- <view class="bottom">
+				<view class="ti">规则</view>
+				<view class="bo">
+					<rich-text nodes="{{listData.rules}}"></rich-text>
+				</view>
+			</view> -->
+		</view>
+	</view>
+	<!-- 首页弹框结束 -->
+
+
+
+	<!-- 底部气泡二维码 -->
+	<!-- <view class="bub">
+		<view class="bub-box">
+			<image src="/images/icon/Bubble.png"></image>
+			<view class="text">点击二维码关注公众号
+				就能领取精品小礼品</view>
+		</view>
+		<view class="qrcode" bindtap="showTips">
+			<image src="/images/icon/qrcode.png"></image>
+		</view>
+	</view> -->
+	<!-- 底部气泡二维码结束 -->
+
+
+	<!-- 二维码弹框 -->
+	<view class="explainTips" wx:if="{{showTips == true}}">
+		<view class="tipsBox">
+			<view class="tipsQrcode">
+				<image style="width:280rpx;height:265rpx" src="/images/icon/qrcode.png"></image>
+				<image style="width:90rpx;height:90rpx;margin-top: 60rpx;margin-bottom: 40rpx;" src="/images/icon/fingerprint.png"></image>
+				<view class="tipsText">长按关注公众号</view>
+			</view>
+		</view>
+		<view class="bigBut" bindtap="showTips">保存图片</view>
+	</view>
+	<!-- 二维码弹框结束 -->
+
+
+
+	<!-- 填写信息弹框 -->
+	<view class="explainTips" wx:if="{{showTips2 == true}}">
+		<view class="tipsBox" style="padding: 5%;">
+			<view class="title2">个人资料</view>
+			<view class="body2">
+
+				<view class="body-box2">
+					<view>姓名:</view>
+					<input bindinput="getName" type="text"></input>
+				</view>
+
+				<view class="body-box2">
+					<view>部门:</view>
+					<input bindinput="getDepartment" type="text"></input>
+
+					<!-- 下拉 -->
+					<!-- <view class="m-select">
+						<view class="section">
+							<picker mode="selector" bindchange="bindPickerChange" value="{{index}}" range="{{showdata}}" range-key="{{'name'}}">
+								<view class="picker">
+									{{showdata[index].name ? showdata[index].name : '选择部门'}}
+								</view>
+							</picker>
+						</view>
+					</view> -->
+					<!-- 下拉结束 -->
+
+				</view>
+			</view>
+
+			<view class="but2" bindtap="showTips2">立即签到</view>
+			<view class="but1" bindtap="guanbi">关闭</view>
+
+		</view>
+	</view>
+	<!-- 填写信息弹框结束 -->
+
+
+
+</view>

@@ -1,0 +1,163 @@
+/* pages/answer/answer.wxss */
+.page {
+  width: 100%;
+  height: 98vh;
+  background: linear-gradient(180deg, #4D7A73 0%, #97C1AE 100%);
+  position: relative;
+  padding-top: 2vh;
+}
+
+
+/* 答题卡 */
+.ans {
+  width: 80%;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 30rpx auto;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.ans>.topIcon {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: white;
+  position: absolute;
+  top: -25rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ans>.topIcon>image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.ans>.ans-box {
+  width: 100%;
+  padding-top: 120rpx;
+  padding-bottom: 120rpx;
+}
+
+.ans>.ans-box>.title {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.ans>.ans-box>.body>.m-body {
+  width: 93%;
+  /* height: 80rpx; */
+  line-height: 80rpx;
+  padding-left: 40rpx;
+  padding-right: 20rpx;
+  border-radius: 80rpx;
+  background: #FBFBFB;
+  border: 2px solid #EFEFF4;
+  margin-top: 30rpx;
+  font-weight: bold;
+  font-size: 24rpx;
+}
+
+.ans>.ans-box>.body>.m-body1 {
+  width: 93%;
+  /* height: 80rpx; */
+  line-height: 80rpx;
+  padding-left: 40rpx;
+  padding-right: 20rpx;
+  border-radius: 80rpx;
+  background: #68D279;
+  border: 2px solid #68D279;
+  color: white;
+  margin-top: 30rpx;
+  font-weight: bold;
+  font-size: 24rpx;
+}
+
+
+
+.ans>.ans-box>.body>.m-body2 {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 40rpx;
+  border-radius: 80rpx;
+  background: #FF1414;
+  border: 2px solid #FF1414;
+  color: white;
+  margin-top: 30rpx;
+  font-weight: bold;
+}
+
+
+
+
+/* 弹框样式 */
+.explainTips {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(105, 105, 105, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.explainTips>.tipsBox {
+  width: 70%;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+.explainTips>.tipsBox>.head {
+  width: 100%;
+  height: 80rpx;
+  font-size: 32rpx;
+  color: #030303;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #d6d6d6;
+}
+
+.explainTips>.tipsBox>.body {
+  width: 80%;
+  font-size: 26rpx;
+  margin: 50rpx auto 40rpx auto;
+  color: #646464;
+  line-height: 50rpx;
+  text-indent: 1.5em;
+  text-align: center;
+}
+
+.explainTips>.tipsBox>.but-box {
+  width: 80%;
+  margin: 20rpx auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.explainTips>.tipsBox>.xian {
+  width: 530rpx;
+  height: 1rpx;
+  background-color: #707070;
+  opacity: 0.2;
+}
+
+.explainTips>.tipsBox>.but-box>.but {
+  width: 40%;
+  color: #FF1414;
+  line-height: 40rpx;
+  font-size: 32rpx;
+  text-align: center;
+  margin: auto;
+  border-radius: 55rpx;
+}

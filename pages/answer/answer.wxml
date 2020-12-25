@@ -1,0 +1,39 @@
+<!-- 答题页 -->
+
+<view class="page">
+
+	<!-- 答题卡 -->
+	<view class="ans">
+		<view class="topIcon">
+			<image wx:if="{{isCorrect == 1}}" src="/images/icon/ans1.png"></image>
+			<image wx:if="{{isCorrect == null}}" src="/images/icon/ans2.png"></image>
+			<image wx:if="{{isCorrect == 0}}" src="/images/icon/ans3.png"></image>
+		</view>
+		<view class="ans-box">
+			<view class="title">{{problemTitle}}</view>
+			<view class="body" wx:for="{{problemData}}" wx:key="index" data-index="{{index}}" data-id="{{problemData[index].problem_item_id}}" data-title="{{problemID}}" bindtap="choice">
+				<view class="{{id  == index ? 'm-body1' : 'm-body'}}">{{item.title}}</view>
+			</view>
+		</view>
+	</view>
+	<!-- 答题卡结束 -->
+
+
+	<!-- 弹框 -->
+	<view class="explainTips" wx:if="{{showTips == true}}">
+		<view class="tipsBox bou-30">
+			<view class="head">答错了</view>
+			<view class="body">
+				<view>正确答案为 {{prompt}}</view>
+			</view>
+			<view class="xian"></view>
+			<view class="but-box" bindtap="showTips">
+				<view class="but">
+					确认
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 弹框结束 -->
+
+</view>

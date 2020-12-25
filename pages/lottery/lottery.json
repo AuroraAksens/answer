@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "sol-wheel": "/components/wheel/index"
+  },
+  "navigationBarTitleText": "抽奖"
+}

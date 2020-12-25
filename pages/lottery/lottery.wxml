@@ -1,0 +1,31 @@
+<!-- 抽奖转盘页 -->
+
+<view class="m-Turntable">
+  <image mode="scaleToFill" class="TurntableBj" src="/images/bj.png"></image>
+  <view class="lotteryBox">
+
+    <!-- 转盘开始 -->
+    <sol-wheel id="sol-wheel" award-numer="{{award}}" mode="{{mode}}" bind:start="wheelStart" bind:success="wheelSuccess"></sol-wheel>
+    <!-- 转盘结束 -->
+
+  </view>
+
+</view>
+
+<!-- 
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view style="width:500rpx" class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">温馨提示</view>
+    </view>
+    <view style="background-color: #fff;" class="padding-xl">
+     抽奖需要获取您的手机号码，请确认授权
+    </view>
+    <view class="cu-bar bg-white justify-between">
+      <view class="foot_btn">
+        <button style="width: 50%;height: 100rpx;" class="cu-btn bg-gray" bindtap="goIndex">取消</button>
+        <button style="width: 50%;height: 100rpx;" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="cu-btn bg-gradual-green">确认授权</button>
+      </view>
+    </view>
+  </view>
+</view> -->

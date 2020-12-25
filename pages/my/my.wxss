@@ -1,0 +1,50 @@
+/* pages/my/my.wxss */
+.page {
+  width: 100%;
+  height: 97vh;
+  background: linear-gradient(180deg, #4D7A73 0%, #97C1AE 100%);
+  position: relative;
+  padding-top: 3vh;
+}
+
+
+/* 个人信息列表 */
+.my{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 100rpx;
+  margin: 20rpx auto;
+  padding: 10rpx 40rpx 10rpx 40rpx;
+}
+
+.my1{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 100rpx;
+  margin: 20rpx auto;
+  padding: 35rpx 40rpx 35rpx 40rpx;
+}
+
+.my>.title{
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.my1>.title{
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.my>.body>image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-top: 5rpx;
+}
+

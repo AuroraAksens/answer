@@ -1,0 +1,24 @@
+<!-- 答题结束页 -->
+
+<view class="page">
+
+	<!-- 背景 -->
+	<image class="jcbj" src="/images/icon/jcbj.png"></image>
+
+	<!-- 弹框背景 -->
+	<image class="tkbj" src="/images/icon/jcTips.png"></image>
+
+
+	<!-- 弹框内容 -->
+	<view class="box">
+		<view class="touImg">
+			<image src="{{userData.avatar_image}}"></image>
+		</view>
+		<view class="title">恭喜你<view style="margin-left:20rpx;color:#4D7A73;">{{userData.nickname}}</view> ，答题完成！</view>
+		<view class="body">{{userData.score}} <view style="color:black;font-size: 32rpx;">分</view>
+		</view>
+		<!-- <view class="foot">马上抽奖</view> -->
+	</view>
+	<!-- 弹框内容结束 -->
+
+</view>
